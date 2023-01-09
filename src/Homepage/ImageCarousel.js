@@ -20,7 +20,7 @@ function ImageCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="HomepageCarousel1.png"
+            src="homepage1.png"
             alt="First slide"
           />
         </Carousel.Item>
