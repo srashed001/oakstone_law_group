@@ -9,7 +9,7 @@ function OakstoneBanner() {
         backgroundColor: 'white'
       }}
     >
-      <Box component={"img"} src="Oakstonebanner.png" sx={{ opacity: 0.5 }} />
+      <Box component={"img"} src="/Oakstonebanner.png"  />
     </Stack>
   );
 }
