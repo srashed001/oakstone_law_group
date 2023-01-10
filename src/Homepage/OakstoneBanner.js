@@ -7,7 +7,7 @@ function OakstoneBanner() {
         boxShadow: 3,
       }}
     >
-      <Box component={"img"} src="oakstonebanner.png"  />
+      <Box component={"img"} src="/oakstonebanner.png"  />
     </Stack>
   );
 }
