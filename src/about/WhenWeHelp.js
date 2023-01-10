@@ -68,8 +68,8 @@ function WhenWeHelpBody() {
     <Grid
       container
       sx={{
-        paddingY: { xs: 2, sm: 4, lg: 7 },
-        width: { xs: 500, sm: 600, md: 900, lg: 1000 },
+        paddingY: { xs: 1, sm: 4, lg: 7 },
+        maxWidth: { xs: 500, sm: 600, md: 900, lg: 1000 },
       }}
     >
       <Grid item sm={12} md={5} sx={{ padding: 3 }}>
@@ -78,7 +78,7 @@ function WhenWeHelpBody() {
             sx={{
               fontSize: { xs: 30, sm: 50, md: 70, lg: 90 },
               fontWeight: "bold",
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm:3},
               fontFamily: "Raleway",
               textShadow: "5px 5px 5px lightgrey"
 
@@ -88,9 +88,9 @@ function WhenWeHelpBody() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 20, md: 22 },
+              fontSize: { xs: 18, sm: 20, md: 22 },
               fontWeight: "bold",
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm:3},
               fontFamily: "Raleway",
             }}
           >
@@ -100,8 +100,8 @@ function WhenWeHelpBody() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 20, md: 22 },
-              marginBottom: 3,
+              fontSize: { xs: 18, sm: 20, md: 22 },
+              marginBottom: {xs: 1.5, sm:3},
               fontFamily: "Raleway",
             }}
           >
@@ -117,7 +117,7 @@ function WhenWeHelpBody() {
               variant="contained"
               disableRipple
               sx={{
-                fontSize: 24,
+                fontSize: {xs: 14, sm: 18, md: 24},
                 boxShadow: 5,
                 padding: 2,
                 backgroundColor: "grey",
@@ -150,7 +150,7 @@ function WhenWeHelp() {
         marginTop: { xs: 4, sm: 8, lg: 14, xl: 30 },
       }}
     >
-      <HeaderLeft left={"WHEN"} right={"can we help"} />
+      <HeaderLeft left={"When"} right={"can we help"} />
       <Stack>
         <Stack
           sx={{

@@ -16,7 +16,7 @@ function About() {
 
   return (
     <Stack sx={{}}>
-      <Box component={"img"} src={"aboutUs4.png"} />
+      <Box sx={{marginTop: {xs: 7}}} component={"img"} src={"aboutUs4.png"} />
       <OakstoneBanner />
       <Stack
         sx={{

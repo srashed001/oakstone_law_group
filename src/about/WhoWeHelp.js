@@ -95,10 +95,10 @@ function WhoWeHelp() {
         marginTop: { xs: 2, sm: 3, md: 4, lg: 7, xl: 15 },
       }}
     >
-      <HeaderRight left={"WHO"} right={"we help"} />
+      <HeaderRight left={"Who"} right={"we help"} />
       <Typography
         sx={{
-          fontSize: { xs: 54, sm: 70, md: 84 },
+          fontSize: { xs: 34, sm: 60, md: 84 },
           fontWeight: "bold",
           fontFamily: "Raleway",
           textShadow: "5px 5px 5px lightgrey",

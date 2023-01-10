@@ -51,7 +51,7 @@ function SectionAccordion({ element }) {
       >
         <Typography
           sx={{
-            fontSize: { xs: 21, sm: 25 },
+            fontSize: { xs: 18, sm: 20, md: 22 },
             fontWeight: "bold",
           }}
         >
@@ -86,7 +86,7 @@ function FreqQuestionsHeader() {
     >
       <Typography
         sx={{
-          fontSize: { xs: 40, sm: 48, md: 54 },
+          fontSize: { xs: 30, sm: 48, md: 54 },
           fontFamily: "Raleway",
           fontWeight: "bold",
         }}
@@ -113,7 +113,7 @@ function FreqQuestionsSubHeader() {
     >
       <Typography
         sx={{
-          fontSize: { xs: 20, sm: 22, md: 25 },
+          fontSize: { xs: 18, sm: 23, md: 25 },
 
           fontFamily: "Raleway",
           fontWeight: "bold",

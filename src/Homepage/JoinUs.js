@@ -83,14 +83,14 @@ function JoinUsBody() {
       container
       sx={{
         paddingY: { xs: 2, sm: 4, lg: 7 },
-        width: { xs: 500, sm: 600, md: 900, lg: 1000 },
+        maxWidth: { xs: 500, sm: 600, md: 900, lg: 1000 },
       }}
     >
       <Grid item sm={12} md={5} sx={{ padding: 3 }}>
         <Stack>
           <Typography
             sx={{
-              fontSize: { xs: 20, md: 22 },
+              fontSize: { xs: 16, sm: 20, md: 22 },
               fontWeight: "bold",
               marginBottom: 3,
               fontFamily: "Raleway",
@@ -103,7 +103,7 @@ function JoinUsBody() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 20, md: 22 },
+              fontSize: { xs: 16, sm: 20, md: 22 },
               marginBottom: 3,
               fontFamily: "Raleway",
             }}
@@ -135,7 +135,7 @@ function JoinUs() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 54, sm: 74, md: 94 },
+              fontSize: { xs: 26, sm: 54, md: 94 },
               fontFamily: "Raleway",
               fontWeight: "bold",
               textShadow: '4px 4px 4px lightgrey'

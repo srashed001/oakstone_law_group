@@ -28,8 +28,8 @@ function WeAreNotHeader({ service }) {
 
 function NotConsolidation() {
   return (
-    <Grid item xs={12} md={6} sx={{textAlign: "right"}}>
-      <Stack sx={{ margin: 3 }}>
+    <Grid item xs={12} sm={6} sx={{textAlign: {xs: 'right', sm: "right"}}}>
+      <Stack sx={{ margin: {xs: 1.5, sm: 3} }}>
         <WeAreNotHeader service={"debt consolidation"} />
         <Box
           sx={{
@@ -40,24 +40,24 @@ function NotConsolidation() {
             sx={{
               fontWeight: "bold",
               fontSize: { xs: 18, sm: 20, md: 22 },
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm: 3},
             }}
           >
             Debt consolidation is a form of debt refinancing.
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22 }, marginBottom: 3 }}
+            sx={{ fontSize: { xs: 16, sm: 18, md: 22 }, marginBottom: {xs: 1.5, sm: 3} }}
           >
             The idea is you take out one giant loan to pay off all of your debt
             at once.
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22 }, marginBottom: 3 }}
+            sx={{ fontSize: { xs: 16, sm: 18, md: 22 }, marginBottom: {xs: 1.5, sm: 3} }}
           >
             So instead of worrying about making multiple payments to different
             creditors, you only make one.
           </Typography>
-          <Typography sx={{ fontSize: 19, fontStyle: "italic" }}>
+          <Typography sx={{ fontSize: {xs: 17, sm: 19, md: 23}, fontStyle: "italic" }}>
             The loans typically have higher interest rates and additional fees
             such as origination fees, which means you just end up owing another
             credit more money.
@@ -70,8 +70,8 @@ function NotConsolidation() {
 
 function NotSettlement() {
   return (
-    <Grid item xs={12} md={6} sx={{}}>
-      <Stack sx={{ margin: 3 }}>
+    <Grid item xs={12} sm={6} sx={{}}>
+      <Stack sx={{ margin: {xs: 1.5, sm: 3} }}>
         <WeAreNotHeader service={"debt settlement"} />
         <Box
           sx={{
@@ -81,8 +81,7 @@ function NotSettlement() {
           <Typography
             sx={{
               fontWeight: "bold",
-              fontSize: { xs: 18, sm: 20, md: 22 },
-              marginBottom: 3,
+              fontSize: { xs: 16, sm: 18, md: 22 }, marginBottom: {xs: 1.5, sm: 3} 
             }}
           >
             Debt settlement involves hiring a company to settle your debt by
@@ -90,13 +89,13 @@ function NotSettlement() {
             creditors.
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22 }, marginBottom: 3 }}
+            sx={{ fontSize: { xs: 16, sm: 18, md: 22 }, marginBottom: {xs: 1.5, sm: 3}  }}
           >
             Using a portion of the money you've sent them, they entice the
             creditor to settle your debt for one lump sum amount, and keep the
             rest.
           </Typography>
-          <Typography sx={{ fontSize: 19, fontStyle: "italic" }}>
+          <Typography sx={{ fontSize: {xs: 17, sm: 19, md: 23}}}>
             Debt settlement companies often collect these payments for a
             duration of three years or more just to settle one debt.
           </Typography>
@@ -119,7 +118,7 @@ function WeAreNotContainer() {
       <Grid
         container
         sx={{
-          maxWidth: { md: 700, lg: 1000 },
+          maxWidth: { xs: 400, sm: 600, md: 700, lg: 1000 },
           backgroundColor: "rgba(256, 256, 256, .3)",
         }}
       >
@@ -132,27 +131,32 @@ function WeAreNotContainer() {
 
 function HireAttorneys2Header() {
   return (
-    <Stack>
-      <Box sx={{ paddingLeft: { xs: 4, lg: 7 }, textAlign: "center" }}>
+    <Stack justifyContent={'center'} alignItems={'center'}>
+      <Box sx={{ textAlign: "center", maxWidth: {xs: 400, sm: 600, md: 800} }}>
         <Typography
           sx={{
-            fontSize: { xs: 40, sm: 48, md: 54 },
+            fontSize: { xs: 24, sm: 48, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             textAlign: "center",
+            textShadow: '4px 4px 4px lightgrey',
+            marginBottom: {xs: 2}
           }}
         >
-          The difference between hiring{" "}
-          <Typography
-            component={"span"}
+          The difference between hiring {" "}<Typography
+          component={'span'}
+   
             sx={{
-              fontSize: { xs: 54, sm: 74, md: 84 },
+              fontSize: { xs: 32, sm: 54, md: 84 },
               fontFamily: "Raleway",
               fontWeight: "bold",
+              textShadow: '4px 4px 4px lightgrey',
+              lineHeight: 1,
+
             }}
-          >
-            attorneys
-          </Typography>
+          >attorneys</Typography></Typography>
+          
+          
           <Typography
             sx={{
               fontSize: { xs: 14, sm: 18, md: 22, lg: 26 },
@@ -166,7 +170,7 @@ function HireAttorneys2Header() {
             It is important you understand the options you have for resolving
             your debt
           </Typography>
-        </Typography>
+        
       </Box>
       <Grid container sx={{ height: 10 }}>
         <Grid item xs={2}></Grid>
@@ -191,7 +195,7 @@ function WeAreHeader() {
       >
         <Typography
           sx={{
-            fontSize: { xs: 30, sm: 38, md: 44 },
+            fontSize: { xs: 26, sm: 38, md: 44 },
 
             fontWeight: "bold",
           }}
@@ -199,11 +203,11 @@ function WeAreHeader() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 44, sm: 64, md: 84 },
+              fontSize: { xs: 34, sm: 64, md: 84 },
               color: "#284B63",
               fontWeight: "bold",
               paddingRight: 2,
-              textShadow: "1px 1px 1px lightgrey",
+              textShadow: "2px 2px 2px grey",
             }}
           >
             WE ARE
@@ -257,7 +261,7 @@ function WeAreContainer() {
             sx={{
               fontWeight: "bold",
               fontSize: { xs: 18, sm: 20, md: 22, lg: 25 },
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm: 3},
             }}
           >
             We legally dispute your debt.
@@ -265,7 +269,7 @@ function WeAreContainer() {
           <Typography
             sx={{
               fontSize: { xs: 18, sm: 20, md: 22, lg: 25 },
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm: 3},
             }}
           >
             Experienced attorneys using legal expertise and tactics to dispute
@@ -274,7 +278,7 @@ function WeAreContainer() {
           <Typography
             sx={{
               fontSize: { xs: 18, sm: 20, md: 22, lg: 25 },
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm: 3},
             }}
           >
             This often means completely discharging your debt or negotiating in
@@ -293,10 +297,10 @@ function WeAreContainer() {
             variant="contained"
             disableRipple
             sx={{
-              fontSize: 24,
+              fontSize: {xs: 16, sm: 20, md: 24},
               boxShadow: 5,
               width: { md: 400 },
-              padding: 2,
+              padding: {xs: 1, sm: 2},
               backgroundColor: "white",
               color: "black",
               "&:hover": {
@@ -320,7 +324,6 @@ function HireAttorneys2() {
   return (
     <Stack
       sx={{
-        marginTop: { xs: 2, md: 0 },
       }}
     >
       <HireAttorneys2Header />

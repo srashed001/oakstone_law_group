@@ -9,13 +9,12 @@ function SeekLegalAdvice3Header() {
     <Stack>
       <Box
         sx={{
-          paddingLeft: { xs: 4, lg: 7 },
           textAlign: "center",
         }}
       >
         <Typography
           sx={{
-            fontSize: { xs: 40, sm: 48, md: 54 },
+            fontSize: { xs: 26, sm: 39, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             textShadow: "4px 4px 5px lightgrey",
@@ -24,7 +23,7 @@ function SeekLegalAdvice3Header() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 54, sm: 74, md: 94 },
+              fontSize: { xs: 30, sm: 55, md: 94 },
               fontFamily: "Raleway",
               fontWeight: "bold",
             }}
@@ -69,6 +68,8 @@ function SeekLegalAdvice3Container() {
         <Box
           sx={{
             maxWidth: 700,
+            textAlign: {xs: 'center', lg: 'left' },
+
 
             paddingX: { xs: 3, sm: 7, md: 10 },
           }}
@@ -76,7 +77,7 @@ function SeekLegalAdvice3Container() {
           <Typography
             sx={{
               fontSize: { xs: 18, sm: 22, md: 25 },
-              marginBottom: 3,
+              marginBottom: {xs: 1.5, sm: 3},
               fontFamily: "Raleway",
             }}
           >
@@ -85,8 +86,8 @@ function SeekLegalAdvice3Container() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 18, sm: 22, md: 25 },
-              marginBottom: 3,
+              fontSize: { xs: 16, sm: 22, md: 25 },
+              marginBottom: {xs: 1.5, sm: 3},
               fontFamily: "Raleway",
               fontWeight: "bold",
             }}
@@ -100,9 +101,9 @@ function SeekLegalAdvice3Container() {
             variant="contained"
             disableRipple
             sx={{
-              fontSize: 24,
+              fontSize: {xs: 14, sm: 19, md: 24},
               boxShadow: 5,
-              marginY: 3,
+              marginBottom: {xs: 1.5, sm: 3},
               padding: 2,
               backgroundColor: "lightgrey",
               color: "black",

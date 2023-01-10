@@ -7,7 +7,7 @@ function FederalReserveBanner() {
         boxShadow: 3,
         backgroundColor: "rgba(60,110,113,.7)",
         color: "white",
-        marginBottom: { xs: 4, sm: 7, md: 10, lg: 13 },
+        marginBottom: { xs: 3, sm: 7, md: 10, lg: 13 },
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -22,8 +22,8 @@ function FederalReserveBanner() {
       > */}
         <Typography
           sx={{
-            fontSize: { sm: 25, md: 30, lg: 35 },
-            paddingTop: { xs: 4, lg: 7 },
+            fontSize: { xs: 18, sm: 25, md: 30, lg: 35 },
+            paddingTop: { xs: 1.5, sm: 3, lg: 5 },
             fontFamily: "Raleway",
             textShadow: "1px 1px 1px #000000",
             fontWeight: "bold",
@@ -34,8 +34,8 @@ function FederalReserveBanner() {
         </Typography>
         <Typography
           sx={{
-            fontSize: { sm: 20, md: 25, lg: 30 },
-            padding: { xs: 4, lg: 7 },
+            fontSize: { xs: 16, sm: 20, md: 25, lg: 30 },
+            padding: { xs: 1.5, sm: 3, lg: 7 },
             fontFamily: "Raleway",
             textShadow: "1px 1px 1px #000000",
             fontWeight: "bold",

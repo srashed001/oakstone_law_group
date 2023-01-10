@@ -52,45 +52,46 @@ function WWDCard({ header, body, icon, img }) {
   return (
     <Card
       elevation={0}
-      sx={{ backgroundColor: "inherit", margin: 2, padding: 2, color: 'white' }}
+      sx={{ backgroundColor: "inherit",  paddingX: 2, color: 'white' }}
     >
-      <CardHeader
-        sx={{}}
-        avatar={icon}
-        title={
-          <Typography
-            sx={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "bold" }}
-          >
-            {header}
-          </Typography>
-        }
-      />
-      <CardMedia
-        component="img"
-        height="194"
-        image={img}
-        alt="Paella dish"
-        sx={{ borderRadius: 2, boxShadow: 5 }}
-      />
-      <CardContent>
-        {body.split(". ").map((sent, i) => {
-          const fontWeight = i === 0 ? "bold" : "normal";
-          console.log(i, fontWeight);
-          const fontSize = i === 0 ? { xs: 16, sm: 20 } : { xs: 16, sm: 18 };
-          return (
+      <Stack justifyContent={'center'} alignItems={'center'} sx={{paddingX: 2}}>
+        <CardHeader
+          sx={{}}
+          avatar={icon}
+          title={
             <Typography
-              sx={{
-                fontFamily: "Raleway",
-                fontSize,
-                fontWeight,
-                marginBottom: 2,
-              }}
+              sx={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "bold" }}
             >
-              {sent}
+              {header}
             </Typography>
-          );
-        })}
-      </CardContent>
+          }
+        />
+        <CardMedia
+          component="img"
+          image={img}
+          alt="Paella dish"
+          sx={{ borderRadius: 2, boxShadow: 5, maxWidth: { xs: 300 } }}
+        />
+        <CardContent>
+          {body.split(". ").map((sent, i) => {
+            const fontWeight = i === 0 ? "bold" : "normal";
+            console.log(i, fontWeight);
+            const fontSize = i === 0 ? { xs: 16, sm: 20 } : { xs: 16, sm: 18 };
+            return (
+              <Typography
+                sx={{
+                  fontFamily: "Raleway",
+                  fontSize,
+                  fontWeight,
+                  marginBottom: 2,
+                }}
+              >
+                {sent}
+              </Typography>
+            );
+          })}
+        </CardContent>
+      </Stack>
     </Card>
   );
 }
@@ -116,22 +117,22 @@ function ContainerBody() {
         }}
       >
         <Avatar src={"oaktree.png"} sx={{
-          width: { xs: 0, md: 300, lg: 500 },
-          height: { xs: 0, md: 300, lg: 500 },
+          width: { xs: 0, sm: 0, md: 300, lg: 500 },
+          height: { xs: 0, sm: 0, md: 300, lg: 500 },
           boxShadow: 5,
-          marginRight: {md: 5, lg: 7}
+          marginRight: { md: 5, lg: 7 }
         }} />
         <Box
           sx={{
             maxWidth: { sm: 500, md: 500, lg: 600 },
             borderLeft: 1,
-            paddingY: 4,
+            paddingY: { xs: 1.5, sm: 3, md: 4 },
             paddingLeft: 2,
           }}
         >
           {statement.split(". ").map((s, i) => {
             const fontWeight = i === 0 ? "bold" : "normal";
-            const fontSize = i === 0 ? { xs: 20, sm: 22, md: 25 } : { xs: 18, sm: 20, md: 22 };
+            const fontSize = i === 0 ? { xs: 18, sm: 22, md: 25 } : { xs: 16, sm: 20, md: 22 };
 
             return (
               <Typography
@@ -154,7 +155,7 @@ function ContainerBody() {
         variant="contained"
         disableRipple
         sx={{
-          fontSize: 24,
+          fontSize: { xs: 14, sm: 18, md: 24 },
           padding: 2,
           marginBottom: 3,
           backgroundColor: "grey",
@@ -193,6 +194,7 @@ function MakeServices() {
           fontFamily: "Raleway",
           textShadow: "2px 2px 2px grey",
           textAlign: "center",
+          paddingX: 5
         }}
       >
         We make our services...
@@ -200,7 +202,7 @@ function MakeServices() {
       <Grid container sx={{ maxWidth: { md: 900, lg: 1000 } }}>
         {wWDCards.map((card) => {
           return (
-            <Grid item xs={12} md={4} alignItems={"center"} sx={{}}>
+            <Grid item xs={12} md={4} sx={{}}>
               <WWDCard
                 key={card.id}
                 img={card.img}
@@ -228,7 +230,7 @@ function WhatWeDo() {
   return (
     <Stack
       sx={{
-        marginTop: { md: 4, lg: 7, xl: 15 },
+        marginTop: { xs: 1.4, sm: 3, md: 4, lg: 7, xl: 15 },
         marginLeft: 0,
       }}
     >

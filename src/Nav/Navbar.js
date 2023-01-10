@@ -50,7 +50,7 @@ function Navbar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.title} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton onClick={() => {navigate(item.resource)}} sx={{ textAlign: "center" }}>
               <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>

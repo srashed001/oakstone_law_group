@@ -150,7 +150,7 @@ function Services() {
 
   return (
     <Stack spacing={0}>
-      <Box component={"img"} src={"services1.png"} />
+      <Box sx={{marginTop: {xs: 7}}} component={"img"} src={"services1.png"} />
       <OakstoneBanner />
       <Stack
         sx={{

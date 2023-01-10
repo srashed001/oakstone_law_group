@@ -13,7 +13,7 @@ function HeaderRight({ left, right, content }) {
       >
         <Typography
           sx={{
-            fontSize: { xs: 54, sm: 74, md: 94 },
+            fontSize: { xs: 34, sm: 74, md: 94 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             // backgroundImage: "url(redTriBack.png)",
@@ -27,7 +27,7 @@ function HeaderRight({ left, right, content }) {
         </Typography>
         <Typography
           sx={{
-            fontSize: { xs: 32, sm: 48, md: 54 },
+            fontSize: { xs: 24, sm: 48, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             paddingX: 2,
@@ -42,7 +42,7 @@ function HeaderRight({ left, right, content }) {
           item
           xs={9}
           sx={{ height: 10, 
-          backgroundColor: "#3C6E71",
+          backgroundColor: "grey",
           borderTopRightRadius: 3,
           borderBottomRightRadius: 3,
           boxShadow: 5, }}

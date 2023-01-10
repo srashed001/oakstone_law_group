@@ -44,7 +44,7 @@ function WhereWeServiceBody() {
               <Typography
                 component={"span"}
                 sx={{
-                  fontSize: { xs: 20, md: 22, lg: 25 },
+                  fontSize: { xs: 18, md: 22, lg: 25 },
                   fontWeight: "bold",
                   fontFamily: "Raleway",
                   textAlign: { xs: "center", md: "right" },
@@ -115,7 +115,7 @@ function WhereWeServiceBody() {
                 marginY: { md: 6, lg: 10 },
                 backgroundColor: "white",
                 boxShadow: 5,
-                maxWidth: { xs: 0, sm: 550, md: 450, lg: 550 },
+                maxWidth: { xs: 0, sm: 550, md: 400, lg: 500 },
               }}
             />
           </Stack>
@@ -136,7 +136,7 @@ function WhereWeServiceHeader() {
       >
         <Typography
           sx={{
-            fontSize: { xs: 54, sm: 74, md: 94 },
+            fontSize: { xs: 34, sm: 60, md: 94 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             paddingLeft: 4,
@@ -144,11 +144,11 @@ function WhereWeServiceHeader() {
             textShadow: "2px 2px 2px lightgrey",
           }}
         >
-          WHERE{" "}
+          Where{" "}
         </Typography>
         <Typography
           sx={{
-            fontSize: { xs: 32, sm: 48, md: 54 },
+            fontSize: { xs: 28, sm: 36, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             paddingLeft: 2,

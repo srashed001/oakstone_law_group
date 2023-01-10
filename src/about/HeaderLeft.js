@@ -7,7 +7,7 @@ function HeaderLeft({ left, right, content }) {
       <Box sx={{ display: "inline-flex", alignItems: "baseline" }}>
         <Typography
           sx={{
-            fontSize: { xs: 54, sm: 74, md: 94 },
+            fontSize: { xs: 34, sm: 74, md: 94 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             paddingLeft: 4,
@@ -19,7 +19,7 @@ function HeaderLeft({ left, right, content }) {
         </Typography>
         <Typography
           sx={{
-            fontSize: { xs: 32, sm: 48, md: 54 },
+            fontSize: { xs: 24, sm: 48, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
             paddingLeft: 2,

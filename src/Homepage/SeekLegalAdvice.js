@@ -19,7 +19,7 @@ function SeekLegalAdvice() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 54, sm: 74, md: 94 },
+              fontSize: { xs: 24, sm: 74, md: 94 },
               fontFamily: "Raleway",
               fontWeight: "bold",
             }}

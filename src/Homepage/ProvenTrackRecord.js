@@ -38,7 +38,7 @@ function DebtTypeCards({ title }) {
             sx={{
               fontSize: { sm: 18, md: 25 },
               fontFamily: "Raleway",
-              padding: 3,
+              padding: {xs: 1.5, sm: 2, md: 3},
               textAlign: "center",
               fontWeight: "bold",
             }}
@@ -68,7 +68,7 @@ function ProvenTrackRecordHeader() {
         </Typography>
         <Typography
           sx={{
-            fontSize: { xs: 28, sm: 38, md: 48, lg: 64 },
+            fontSize: { xs: 20, sm: 38, md: 48, lg: 64 },
             fontFamily: "Raleway",
             fontWeight: "bold",
           }}
@@ -77,7 +77,7 @@ function ProvenTrackRecordHeader() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 28, sm: 38, md: 48, lg: 64 },
+              fontSize: { xs: 20, sm: 38, md: 48, lg: 64 },
               fontFamily: "Raleway",
               fontWeight: "bold",
               color: "#284B63",
@@ -112,7 +112,7 @@ function ProvenTrackRecordContainer() {
         sx={{
           display: "inline-flex",
           justifyContent: "center",
-          alignItems: { lg: "center" },
+          alignItems: "center" ,
           marginX: { xs: 2, sm: 4, lg: 7, xl: 15 },
           marginTop: { xs: 2, sm: 4, lg: 7 },
           marginBottom: { xs: 2, sm: 3, lg: 5 },
@@ -130,15 +130,16 @@ function ProvenTrackRecordContainer() {
         <Box
           sx={{
             maxWidth: { sm: 250, md: 400, lg: 500 },
-            marginLeft: { xs: 5, xl: 10 },
+            marginLeft: { sm: 5, xl: 10 },
           }}
         >
           <Typography
             sx={{
-              fontSize: { xs: 18, sm: 20, md: 20, lg: 22 },
+              fontSize: { xs: 16, sm: 20, md: 20, lg: 22 },
               fontFamily: "Raleway",
-              marginBottom: 3,
+              marginY: {xs: 1.5, sm: 3},
               fontWeight: "bold",
+              textAlign: {xs: 'center', sm: "left"}
             }}
           >
             Whether you're struggling with debt from a car loan that's gone

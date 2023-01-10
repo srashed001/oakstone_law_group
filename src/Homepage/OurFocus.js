@@ -10,7 +10,7 @@ function OurFocusHeader() {
       >
         <Typography
           sx={{
-            fontSize: { xs: 40, sm: 48, md: 54 },
+            fontSize: { xs: 26, sm: 48, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
           }}
@@ -18,7 +18,7 @@ function OurFocusHeader() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 54, sm: 74, md: 94 },
+              fontSize: { xs: 34, sm: 64, md: 94 },
               fontFamily: "Raleway",
               fontWeight: "bold",
             }}
@@ -58,7 +58,7 @@ function OurFocusBody() {
         >
           <Typography
             sx={{
-              fontSize: { xs: 20, md: 22, lg: 25 },
+              fontSize: { xs: 18, sm: 20, md: 22, lg: 25 },
               marginBottom: 3,
               fontFamily: "Raleway",
               fontWeight: "bold",
@@ -70,7 +70,7 @@ function OurFocusBody() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 18, md: 20, lg: 22 },
+              fontSize: { xs: 18, sm: 18, md: 20, lg: 22 },
               marginBottom: 3,
               fontFamily: "Raleway",
             }}

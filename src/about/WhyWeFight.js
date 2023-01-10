@@ -80,15 +80,15 @@ function MissionCard() {
   return (
     <Stack
       sx={{
-        padding: 3,
-        marginX: { sm: 3, md: 4 },
+        padding: {xs: 1.5, sm: 3},
+        marginX: { xs: 1.5, sm: 3, md: 4 },
       }}
     >
       <Box>
         <Typography
           sx={{
             fontFamily: "Raleway",
-            fontSize: { xs: 20, sm: 24, md: 26 },
+            fontSize: { xs: 18, sm: 23, md: 26 },
             fontWeight: "bold",
           }}
         >
@@ -97,9 +97,7 @@ function MissionCard() {
           comprehensive debt relief services. Our cutting-edge technology,
           expertise and customer orientation will gives us an edge over
           competitors as we seek to create value for stakeholders while keeping
-          our clients' evolving needs at heart. We aim to take strides towards
-          modernizing legal proceedings with advanced business solutions and
-          technological developments that drive progress even further.
+          our clients' evolving needs at heart.
         </Typography>
         <Typography
           sx={{
@@ -108,9 +106,9 @@ function MissionCard() {
             marginY: 3,
           }}
         >
-          We strive to be the US leader in debt relief services by building on
-          our technologies, competencies and customer interests, and creating
-          value for our stakeholders and customers.
+          We aim to take strides towards
+          modernizing legal proceedings with advanced business solutions and
+          technological developments that drive progress even further.
         </Typography>
       </Box>
     </Stack>
@@ -121,8 +119,8 @@ function VisionCard() {
   return (
     <Stack
       sx={{
-        padding: 3,
-        marginX: { sm: 3, md: 4 },
+        padding: {xs: 1.5, sm: 3},
+        marginX: { xs: 1.5, sm: 3, md: 4 },
       }}
     >
       <Box>
@@ -190,7 +188,7 @@ function ValueCard({ title, body }) {
         <Typography
           sx={{
             fontFamily: "Raleway",
-            fontSize: { xs: 20, sm: 22, md: 24 },
+            fontSize: { xs: 18, sm: 22, md: 24 },
             fontWeight: "bold",
           }}
         >
@@ -213,7 +211,8 @@ function ValuesCard() {
   return (
     <Stack
       sx={{
-        marginX: { xs: 2, sm: 3, md: 4 },
+        padding: {xs: 1.5, sm: 3},
+        marginX: { xs: 1.5, sm: 3, md: 4 },
       }}
     >
       <Box>
@@ -258,8 +257,7 @@ function WhyWeFightTabs({ val, handleChange }) {
       <Box sx={{}}>
         <StyledTabs
           sx={{
-            marginTop: 2,
-            marginLeft: 2,
+          
           }}
           value={val}
           onChange={handleChange}
@@ -269,21 +267,21 @@ function WhyWeFightTabs({ val, handleChange }) {
             label="Mission"
             sx={{
               padding: { xs: 2, sm: 3, md: 4 },
-              fontSize: { xs: 20, sm: 30, md: 45 },
+              fontSize: { xs: 18, sm: 30, md: 45 },
             }}
           />
           <StyledTab
             label="Vision"
             sx={{
               padding: { xs: 2, sm: 3, md: 4 },
-              fontSize: { xs: 20, sm: 30, md: 45 },
+              fontSize: { xs: 18, sm: 30, md: 45 },
             }}
           />
           <StyledTab
             label="Values"
             sx={{
               padding: { xs: 2, sm: 3, md: 4 },
-              fontSize: { xs: 20, sm: 30, md: 45 },
+              fontSize: { xs: 18, sm: 30, md: 45 },
             }}
           />
         </StyledTabs>
@@ -295,14 +293,14 @@ function WhyWeFightTabs({ val, handleChange }) {
 function ContainerHeader({ header }) {
   const [first, ...rest] = header;
   return (
-    <Stack sx={{ paddingX: 3 }}>
+    <Stack sx={{ padding: {xs: 1.5, sm: 3}}}>
       <Box>
         <Typography
           component={"span"}
           sx={{
             color: "#284B63",
             fontFamily: "Raleway",
-            fontSize: { xs: 54, sm: 70, md: 94 },
+            fontSize: { xs: 35, sm: 57, md: 94 },
             fontWeight: "bold",
             textShadow: "5px 5px 5px lightgrey"
           }}
@@ -313,7 +311,7 @@ function ContainerHeader({ header }) {
           component={"span"}
           sx={{
             fontFamily: "Raleway",
-            fontSize: { xs: 34, sm: 50, md: 74 },
+            fontSize: { xs: 28, sm: 48, md: 74 },
             fontWeight: "bold",
             textShadow: "5px 5px 5px lightgrey"
           }}
@@ -354,7 +352,7 @@ function WhyWeFight({ val, handleChange }) {
         marginTop: { xs: 2, sm: 3, md: 4, lg: 7, xl: 15 },
       }}
     >
-      <HeaderRight left={"WHY"} right={"we fight"} />
+      <HeaderRight left={"Why"} right={"we fight"} />
       <Stack
         sx={{
           padding: { xs: 2, sm: 3, md: 4, lg: 7, xl: 15 },
