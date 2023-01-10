@@ -1,5 +1,5 @@
 import ImageCarousel from "./ImageCarousel";
-import TriumphBanner from "./TriumphBanner";
+import OakstoneBanner from "./OakstoneBanner";
 import IntroductionPage from "./IntroductionPage";
 import ProvenTrackRecord from "./ProvenTrackRecord";
 import OurFocus from "./OurFocus";
@@ -21,12 +21,10 @@ function Homepage() {
       }}
     >
       <ImageCarousel />
-      <TriumphBanner />
-      <IntroductionPage />
-      {/* <FederalReserveBanner /> */}
-      <SeekLegalAdvice3 />
-      {/* <UnsecuredDebtBanner /> */}
+      <OakstoneBanner />
       <ProvenTrackRecord />
+      <SeekLegalAdvice3 />
+      <FederalReserveBanner />
       <HireAttorneys2 />
       <OurFocus />
       <FreqQuestions />
