@@ -55,7 +55,7 @@ function WhenWeHelpForm() {
         <FormHelperText sx={{ fontSize: 16 }} id="description">
           Explain your case
         </FormHelperText>
-        <Button color={"error"}>submit</Button>
+        <Button color={"primary"}>submit</Button>
       </Stack>
     </Stack>
   );
@@ -162,10 +162,6 @@ function WhenWeHelp() {
           <WhenWeHelpBody />
         </Stack>
       </Stack>
-      <Grid container>
-        <Grid item sx={{}} xs={4}></Grid>
-        <Grid item sx={{ height: 10, backgroundColor: "red" }} xs={8}></Grid>
-      </Grid>
     </Stack>
   );
 }

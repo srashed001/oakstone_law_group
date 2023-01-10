@@ -1,4 +1,5 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import { margin } from "@mui/system";
 import OakstoneBanner from "../Homepage/OakstoneBanner";
 import ContactBody from "./ContactBody";
 import ContactInfo from "./ContactInfo";
@@ -15,8 +16,15 @@ function ContactHome(){
               backgroundSize: "100%",
             }}
           >
-            <ContactInfo />
-            <ContactBody />
+            {/* <ContactInfo /> */}
+            <Typography sx={{
+              fontSize:30,
+              textAlign: 'center',
+              marginY: 20
+            }}>
+              Contact information coming soon...
+            </Typography>
+            {/* <ContactBody /> */}
           </Stack>
         </Stack>
       );

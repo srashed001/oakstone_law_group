@@ -8,6 +8,7 @@ function HeaderRight({ left, right, content }) {
           display: "inline-flex",
           alignItems: "baseline",
           justifyContent: "flex-end",
+          paddingRight: 4
         }}
       >
         <Typography
@@ -18,7 +19,7 @@ function HeaderRight({ left, right, content }) {
             // backgroundImage: "url(redTriBack.png)",
             // backgroundSize: "cover",
             paddingLeft: 4,
-            color: "red",
+            color: "#284B63",
             textShadow: "2px 2px 2px grey"
           }}
         >
@@ -40,7 +41,11 @@ function HeaderRight({ left, right, content }) {
         <Grid
           item
           xs={9}
-          sx={{ height: 10, backgroundColor: "rgba(79, 81, 84, 1)" }}
+          sx={{ height: 10, 
+          backgroundColor: "#3C6E71",
+          borderTopRightRadius: 3,
+          borderBottomRightRadius: 3,
+          boxShadow: 5, }}
         ></Grid>
       </Grid>
       {content}

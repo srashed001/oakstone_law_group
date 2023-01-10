@@ -24,7 +24,7 @@ function Intro() {
           fontWeight: "bold",
         }}
       >
-        At Triumph Law Group we understand how intimidating it can be when faced
+        At Oakstone Law Group we understand how intimidating it can be when faced
         with collections harassment from debt collectors. We have years of
         experience helping clients navigate their way through these types of
         difficult situations so they can get back control over their finances
@@ -57,7 +57,7 @@ function Whatis() {
           xs={8}
           sx={{
             height: 6,
-            backgroundColor: "red",
+            backgroundColor: "#284B63",
             borderRadius: 2,
             boxShadow: 2,
           }}
@@ -102,7 +102,7 @@ function WhatIsFDCPA() {
           xs={8}
           sx={{
             height: 6,
-            backgroundColor: "red",
+            backgroundColor: "#284B63",
             borderRadius: 2,
             boxShadow: 2,
           }}
@@ -261,7 +261,7 @@ function OurServices() {
           xs={8}
           sx={{
             height: 6,
-            backgroundColor: "red",
+            backgroundColor: "#284B63",
             borderRadius: 2,
             boxShadow: 2,
           }}
@@ -276,7 +276,7 @@ function OurServices() {
           marginY: 3,
         }}
       >
-        Triumph Law Group has years of experience helping clients navigate
+        Oakstone Law Group has years of experience helping clients navigate
         complex legal matters related to collections harassment. Our team of
         experienced attorneys will work hard to ensure that your rights are
         protected throughout the process and that any unlawful collection

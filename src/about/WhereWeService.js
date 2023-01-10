@@ -48,7 +48,7 @@ function WhereWeServiceBody() {
                   fontWeight: "bold",
                   fontFamily: "Raleway",
                   textAlign: { xs: "center", md: "right" },
-                  color: "red",
+                  color: "#284B63",
                 }}
               >
                 North Dakota
@@ -61,7 +61,7 @@ function WhereWeServiceBody() {
                   fontWeight: "bold",
                   fontFamily: "Raleway",
                   textAlign: { xs: "center", md: "right" },
-                  color: "red",
+                  color: "#284B63",
                 }}
               >
                 {" "}
@@ -83,7 +83,7 @@ function WhereWeServiceBody() {
                   fontSize: { xs: 18, md: 20, lg: 22 },
                   fontFamily: "Raleway",
                   textAlign: { xs: "center", md: "right" },
-                  color: "red",
+                  color: "#284B63",
                 }}
               >
                 48 states!
@@ -163,6 +163,7 @@ function WhereWeServiceHeader() {
           width: "80%",
           height: 10,
           backgroundColor: "black",
+          boxShadow: 5
         }}
       />
     </Stack>
@@ -176,7 +177,7 @@ function WhereWeService() {
         marginTop: { xs: 2, sm: 3, md: 4, lg: 7, xl: 15 },
         paddingY: { xs: 0, sm: 3, md: 4, lg: 7, xl: 15 },
         marginLeft: 0,
-        backgroundColor: "rgba(256,0,0, .7)",
+        backgroundColor: "rgba(60, 110, 113, .7)",
         boxShadow: 5,
       }}
     >

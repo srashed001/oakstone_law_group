@@ -20,7 +20,7 @@ function About() {
       <OakstoneBanner />
       <Stack
         sx={{
-          backgroundImage: "url(aboutBack.png)",
+          backgroundImage: "url(aboutBack4.png)",
           backgroundSize: "100%",
         }}
       >

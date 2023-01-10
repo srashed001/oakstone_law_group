@@ -146,7 +146,7 @@ function HireAttorneys2Header() {
           <Typography
             component={"span"}
             sx={{
-              fontSize: { xs: 54, sm: 74, md: 94 },
+              fontSize: { xs: 54, sm: 74, md: 84 },
               fontFamily: "Raleway",
               fontWeight: "bold",
             }}

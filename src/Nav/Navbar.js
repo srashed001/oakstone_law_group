@@ -45,7 +45,7 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Box component={"img"} src="GLG_LOGO.svg" height={50} />
+      <Box component={"img"} src="oakstone_logo.png" height={50} />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -81,8 +81,8 @@ function Navbar(props) {
           <Box sx={{}}>
             <Box
               component={"img"}
-              src="logo6.png"
-              height={50}
+              src="oakstone_logo.png"
+              height={100}
               sx={{ display: { xs: "none", sm: "block" } }}
             />
           </Box>

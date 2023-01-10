@@ -56,7 +56,7 @@ const StyledTabs = styled((props) => (
   },
   "& .MuiTabs-indicatorSpan": {
     width: "100%",
-    backgroundColor: "red",
+    backgroundColor: "#284B63",
   },
 });
 
@@ -92,7 +92,7 @@ function MissionCard() {
             fontWeight: "bold",
           }}
         >
-          Triumph Law Group intends to be the most innovative solution partner
+          Oakstone Law Group intends to be the most innovative solution partner
           in the legal sector, powering our clients to success with
           comprehensive debt relief services. Our cutting-edge technology,
           expertise and customer orientation will gives us an edge over
@@ -177,8 +177,9 @@ function ValueCard({ title, body }) {
             width: { md: 100 },
             fontSize: { md: 40 },
             boxShadow: 3,
-            backgroundImage: "url(redTriBack.png)",
-            backgroundSize: "cover",
+            // backgroundImage: "url(redTriBack.png)",
+            // backgroundSize: "cover",
+            backgroundColor: '#284B63',
             color: "white",
           }}
         >
@@ -299,7 +300,7 @@ function ContainerHeader({ header }) {
         <Typography
           component={"span"}
           sx={{
-            color: "red",
+            color: "#284B63",
             fontFamily: "Raleway",
             fontSize: { xs: 54, sm: 70, md: 94 },
             fontWeight: "bold",

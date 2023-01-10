@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Button,
   Card,
@@ -18,7 +19,7 @@ import { fontWeight, textAlign } from "@mui/system";
 
 const statement = `Our experienced team of lawyers provide a legal means for reducing
 your debt load and resolving your financial problems.. The truth is debt left ignored will not go anywhere, and the damage
-it can have on your credit report can limit your financial freedom.. Creditors and debt collectors make mistakes, and here at Triumph Law
+it can have on your credit report can limit your financial freedom.. Creditors and debt collectors make mistakes, and here at Oakstone Law
 Group, we have the expertise and resources to leverage those
 mistakes to create favorable outcomes for our clients.
 `;
@@ -51,7 +52,7 @@ function WWDCard({ header, body, icon, img }) {
   return (
     <Card
       elevation={0}
-      sx={{ backgroundColor: "inherit", margin: 2, padding: 2 }}
+      sx={{ backgroundColor: "inherit", margin: 2, padding: 2, color: 'white' }}
     >
       <CardHeader
         sx={{}}
@@ -114,9 +115,11 @@ function ContainerBody() {
           padding: { xs: 2, sm: 3, md: 5 }
         }}
       >
-        <Box component={'img'} src={"lawT.png"} sx={{
-          maxWidth: {xs: 0, md: 200, lg: 300},
-          paddingRight: {xs: 2, sm: 4, md: 6, lg: 8}
+        <Avatar src={"oaktree.png"} sx={{
+          width: { xs: 0, md: 300, lg: 500 },
+          height: { xs: 0, md: 300, lg: 500 },
+          boxShadow: 5,
+          marginRight: {md: 5, lg: 7}
         }} />
         <Box
           sx={{
@@ -154,7 +157,7 @@ function ContainerBody() {
           fontSize: 24,
           padding: 2,
           marginBottom: 3,
-          backgroundColor: "rgba(229, 56, 59, 1)",
+          backgroundColor: "grey",
           color: "white",
           "&:hover": {
             backgroundColor: "lightgrey",
@@ -178,7 +181,8 @@ function MakeServices() {
       sx={{
         paddingY: { xs: 2, sm: 4, md: 6, lg: 10 },
         marginTop: { xs: 2, sm: 4, md: 6 },
-        backgroundColor: "rgba(0, 0, 0, .04)",
+        backgroundColor: "rgba(40, 75, 99, .7)",
+        color: 'white',
         boxShadow: 5,
       }}
     >
@@ -187,7 +191,7 @@ function MakeServices() {
           fontSize: { xs: 30, sm: 40, md: 50 },
           fontWeight: "bold",
           fontFamily: "Raleway",
-          textShadow: "2px 2px 2px lightgrey",
+          textShadow: "2px 2px 2px grey",
           textAlign: "center",
         }}
       >
@@ -228,7 +232,7 @@ function WhatWeDo() {
         marginLeft: 0,
       }}
     >
-      <HeaderLeft left={"WHAT"} right={"we do"} />
+      <HeaderLeft left={"What"} right={"we do"} />
       <WhatWeDoContainer />
     </Stack>
   );

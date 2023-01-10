@@ -80,8 +80,7 @@ function ServiceAccordion({ id, title, body, expanded, handleChange }) {
               width: { xs: 50, sm: 75, md: 100 },
               marginX: { xs: 2, sm: 2, md: 3 },
               boxShadow: 5,
-              backgroundImage: "url(redTriBack.png)",
-              backgroundSize: "cover",
+              backgroundColor: '#284B63',
               fontSize: 30,
               fontWeight: "bold",
             }}
@@ -155,7 +154,7 @@ function Services() {
       <OakstoneBanner />
       <Stack
         sx={{
-          backgroundImage: "url(servicesBack.png)",
+          backgroundImage: "url(aboutBack3.png)",
           backgroundSize: "100%",
         }}
       >
@@ -176,7 +175,7 @@ function Services() {
               <Typography
                 component={"span"}
                 sx={{
-                  color: "red",
+                  color: "#284B63",
                   fontSize: { xs: 25, sm: 30, md: 35 },
                   fontFamily: "Raleway",
                   fontWeight: "bold",

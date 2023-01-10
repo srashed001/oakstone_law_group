@@ -52,7 +52,7 @@ function DebtWorks() {
           xs={8}
           sx={{
             height: 6,
-            backgroundColor: "red",
+            backgroundColor: "#284B63",
             borderRadius: 2,
             boxShadow: 2,
           }}
@@ -110,7 +110,7 @@ function Knowledge() {
           xs={8}
           sx={{
             height: 6,
-            backgroundColor: "red",
+            backgroundColor: "#284B63",
             borderRadius: 2,
             boxShadow: 2,
           }}
@@ -159,7 +159,7 @@ function OurServices() {
           xs={8}
           sx={{
             height: 6,
-            backgroundColor: "red",
+            backgroundColor: "#284B63",
             borderRadius: 2,
             boxShadow: 2,
           }}
