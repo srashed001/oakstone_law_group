@@ -4,12 +4,10 @@ function OakstoneBanner() {
   return (
     <Stack
       sx={{
-        position: "relative",
         boxShadow: 3,
-        backgroundColor: 'white'
       }}
     >
-      <Box component={"img"} src="/Oakstonebanner.png"  />
+      <Box component={"img"} src="oakstonebanner.png"  />
     </Stack>
   );
 }
