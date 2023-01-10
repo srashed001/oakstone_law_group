@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { fontFamily, height } from "@mui/system";
 import { createRef, useEffect, useRef, useState } from "react";
-import TriumphBanner from "../Homepage/TriumphBanner";
+import OakstoneBanner from "../Homepage/OakstoneBanner";
 import Bankruptcy from "./Bankruptcy";
 import CivilLitigation from "./CivilLitigation";
 import CollectionsHarrassment from "./CollectionsHarrassment";
@@ -152,7 +152,7 @@ function Services() {
   return (
     <Stack spacing={0}>
       <Box component={"img"} src={"services1.png"} />
-      <TriumphBanner />
+      <OakstoneBanner />
       <Stack
         sx={{
           backgroundImage: "url(servicesBack.png)",

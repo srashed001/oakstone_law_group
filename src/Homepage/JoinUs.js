@@ -34,7 +34,7 @@ function JoinUsForm() {
             sx={{
               fontSize: { xs: 30, sm: 40, md: 50 },
               fontWeight: "bold",
-              color: "red",
+              color: "#284B63",
               fontFamily: "Raleway",
             }}
           >
@@ -71,7 +71,7 @@ function JoinUsForm() {
         <FormHelperText sx={{ fontSize: 16 }} id="description">
           Explain your case
         </FormHelperText>
-        <Button color={"error"}>submit</Button>
+        <Button color={"primary"}>submit</Button>
       </Stack>
     </Stack>
   );
@@ -129,36 +129,34 @@ function JoinUs() {
         <Box
           sx={{
             paddingLeft: 4,
+            textAlign: "center",
           }}
         >
           <Typography
+            component={"span"}
             sx={{
-              fontSize: { xs: 40, sm: 48, md: 54 },
+              fontSize: { xs: 54, sm: 74, md: 94 },
               fontFamily: "Raleway",
               fontWeight: "bold",
+              textShadow: '4px 4px 4px lightgrey'
             }}
           >
-            <Typography
-              component={"span"}
-              sx={{
-                fontSize: { xs: 54, sm: 74, md: 94 },
-                fontFamily: "Raleway",
-                fontWeight: "bold",
-                color: "red",
-              }}
-            >
-              Join
-            </Typography>{" "}
-            us
-          </Typography>
+            Contact us today
+          </Typography>{" "}
         </Box>
-        <Stack
-          sx={{
-            width: "80%",
-            height: 10,
-            backgroundColor: "grey",
-          }}
-        />
+        <Grid container sx={{ height: 10 }}>
+          <Grid item xs={2}></Grid>
+          <Grid
+            item
+            xs={10}
+            sx={{
+              backgroundColor: "#3C6E71",
+              borderTopLeftRadius: 3,
+              borderBottomLeftRadius: 3,
+              boxShadow: 5,
+            }}
+          ></Grid>
+        </Grid>
         <Stack
           sx={{
             display: "flex",

@@ -6,7 +6,6 @@ function OurFocusHeader() {
       <Box
         sx={{
           paddingLeft: { xs: 4, lg: 7 },
-          marginTop: 4,
         }}
       >
         <Typography
@@ -30,7 +29,7 @@ function OurFocusHeader() {
         </Typography>
       </Box>
       <Grid container sx={{ height: 10 }}>
-        <Grid item xs={10} sx={{ backgroundColor: "red" }}></Grid>
+        <Grid item xs={10} sx={{  backgroundColor: "#3C6E71", borderTopRightRadius: 3, borderBottomRightRadius: 3, boxShadow: 5 }}></Grid>
         <Grid item xs={2}></Grid>
       </Grid>
     </Stack>
@@ -65,7 +64,7 @@ function OurFocusBody() {
               fontWeight: "bold",
             }}
           >
-            Triumph Law Group is a well-established, successful law firm that
+            Oakstone Law Group is a well-established, successful law firm that
             was founded on the principles of helping consumers and Americans get
             control over their debt and repair their financial standing.
           </Typography>
@@ -100,7 +99,7 @@ function OurFocusBody() {
 
 function OurFocus() {
   return (
-    <Stack sx={{ marginY: { xs: 2, sm: 4, lg: 7, xl: 15 } }}>
+    <Stack sx={{ marginY: { xs: 2, sm: 4, md: 8 }, textAlign: 'center' }}>
       <OurFocusHeader />
       <OurFocusBody />
     </Stack>

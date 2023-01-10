@@ -1,5 +1,5 @@
 import { Box, Stack } from "@mui/material";
-import TriumphBanner from "../Homepage/TriumphBanner";
+import OakstoneBanner from "../Homepage/OakstoneBanner";
 import ContactBody from "./ContactBody";
 import ContactInfo from "./ContactInfo";
 
@@ -8,7 +8,7 @@ function ContactHome(){
     return (
         <Stack sx={{}}>
           <Box component={"img"} src={"contactUsBack.png"} />
-          <TriumphBanner />
+          <OakstoneBanner />
           <Stack
             sx={{
             //   backgroundImage: "url(aboutBack.png)",

@@ -15,13 +15,13 @@ function Footer() {
           padding: 2,
         }}
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={0}>
           <Stack sx={{}}>
-            <Box component={"img"} src={"logoWhite.png"} maxWidth={800} />
+            <Box component={"img"} src={"footerOakstone.png"} maxWidth={600} />
           </Stack>
         </Grid>
-        <Grid item xs={12} md={6} sx={{}}>
-          <Box
+        <Grid item xs={0} sx={{}}>
+          {/* <Box
             sx={{
               display: "inline-flex",
               width: "100%",
@@ -108,7 +108,7 @@ function Footer() {
                 service@gallantlawpc.com
               </Typography>
             </Box>
-          </Box>
+          </Box> */}
         </Grid>
       </Grid>
       <FooterBody />
@@ -133,7 +133,7 @@ function FooterBody() {
             sx={{
               fontSize: 20,
               fontWeight: "bold",
-              color: "red",
+              color: "#284B63",
             }}
           >
             Quick Links
@@ -206,7 +206,7 @@ function FooterBody() {
             sx={{
               fontSize: 20,
               fontWeight: "bold",
-              color: "red",
+              color: "#284B63",
             }}
           >
             Services

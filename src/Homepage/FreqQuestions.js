@@ -60,7 +60,7 @@ function SectionAccordion({ element }) {
       </AccordionSummary>
       <AccordionDetails>
         <Grid container sx={{ height: 10 }}>
-          <Grid item xs={10} sx={{ backgroundColor: "red" }}></Grid>
+          <Grid item xs={10} sx={{ backgroundColor: "grey" }}></Grid>
           <Grid item xs={2}></Grid>
         </Grid>
         <Typography
@@ -151,7 +151,7 @@ function FreqQuestions() {
   return (
     <Stack
       sx={{
-        backgroundColor: "rgba(256, 0, 0, .8)",
+        backgroundColor: "rgba(40,75,99,.8)",
         paddingBottom: { xs: 2, sm: 4, lg: 7 },
         boxShadow: 5,
         boxRadius: 2,

@@ -1,6 +1,6 @@
 import { Box, Stack } from "@mui/material";
 import { useEffect, useState } from "react";
-import TriumphBanner from "../Homepage/TriumphBanner";
+import OakstoneBanner from "../Homepage/OakstoneBanner";
 import WhatWeDo from "./WhatWeDo";
 import WhenWeHelp from "./WhenWeHelp";
 import WhereWeService from "./WhereWeService";
@@ -17,7 +17,7 @@ function About() {
   return (
     <Stack sx={{}}>
       <Box component={"img"} src={"aboutUs4.png"} />
-      <TriumphBanner />
+      <OakstoneBanner />
       <Stack
         sx={{
           backgroundImage: "url(aboutBack.png)",

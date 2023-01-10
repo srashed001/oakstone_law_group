@@ -1,7 +1,8 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import ContactUs from "./ContactUs";
 import GavelIcon from "@mui/icons-material/Gavel";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import { useNavigate } from "react-router";
 
 function SeekLegalAdvice3Header() {
   return (
@@ -17,7 +18,7 @@ function SeekLegalAdvice3Header() {
             fontSize: { xs: 40, sm: 48, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
-            textShadow: "4px 4px 5px black",
+            textShadow: "4px 4px 5px lightgrey",
           }}
         >
           <Typography
@@ -38,7 +39,7 @@ function SeekLegalAdvice3Header() {
           item
           xs={10}
           sx={{
-            backgroundColor: "red",
+            backgroundColor: "#3C6E71",
             borderTopRightRadius: 3,
             borderBottomRightRadius: 3,
             boxShadow: 5,
@@ -51,8 +52,9 @@ function SeekLegalAdvice3Header() {
 }
 
 function SeekLegalAdvice3Container() {
+  const navigate = useNavigate();
   return (
-    <Stack sx={{ backgroundColor: "rgba(0,0,0,.4)" }}>
+    <Stack sx={{}}>
       <Stack
         sx={{
           display: "flex",
@@ -63,9 +65,7 @@ function SeekLegalAdvice3Container() {
           marginX: { xs: 3, sm: 7, md: 10 },
         }}
       >
-        <AccountBalanceIcon
-          sx={{ fontSize: { xs: 0, lg: 200 }, color: "white" }}
-        />
+        <AccountBalanceIcon sx={{ fontSize: { xs: 0, lg: 200 } }} />
         <Box
           sx={{
             maxWidth: 700,
@@ -96,17 +96,27 @@ function SeekLegalAdvice3Container() {
             possible for consumers in bad financial situations so they can find
             the freedom they deserve.
           </Typography>
-          {/* <Typography
+          <Button
+            variant="contained"
+            disableRipple
             sx={{
-              fontSize: { xs: 18, sm: 22, md: 25 },
-              marginBottom: 3,
-              fontFamily: "Raleway",
+              fontSize: 24,
+              boxShadow: 5,
+              marginY: 3,
+              padding: 2,
+              backgroundColor: "lightgrey",
+              color: "black",
+              "&:hover": {
+                backgroundColor: "grey",
+                color: "white",
+              },
+            }}
+            onClick={() => {
+              navigate("/about");
             }}
           >
-            With locations and attorneys operating in 48 states, we have the
-            diverse background and case experience to select the right legal
-            team for every case.
-          </Typography> */}
+            learn About us
+          </Button>
         </Box>
       </Stack>
     </Stack>
@@ -115,7 +125,7 @@ function SeekLegalAdvice3Container() {
 
 function SeekLegalAdvice3() {
   return (
-    <Stack sx={{ backgroundColor: "grey", color: "white" }}>
+    <Stack sx={{}}>
       <SeekLegalAdvice3Header />
       <SeekLegalAdvice3Container />
     </Stack>

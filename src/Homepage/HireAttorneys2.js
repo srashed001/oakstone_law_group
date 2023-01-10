@@ -8,7 +8,7 @@ function WeAreNotHeader({ service }) {
         sx={{
           fontSize: { xs: 22, md: 30 },
           fontWeight: "bold",
-          color: "red",
+          color: "#284B63",
           textShadow: "1px 1px 1px lightgrey",
         }}
       >
@@ -28,7 +28,7 @@ function WeAreNotHeader({ service }) {
 
 function NotConsolidation() {
   return (
-    <Grid item xs={12} md={6} sx={{}}>
+    <Grid item xs={12} md={6} sx={{textAlign: "right"}}>
       <Stack sx={{ margin: 3 }}>
         <WeAreNotHeader service={"debt consolidation"} />
         <Box
@@ -133,14 +133,16 @@ function WeAreNotContainer() {
 function HireAttorneys2Header() {
   return (
     <Stack>
-      <Box sx={{ paddingLeft: { xs: 4, lg: 7 } }}>
+      <Box sx={{ paddingLeft: { xs: 4, lg: 7 }, textAlign: "center" }}>
         <Typography
           sx={{
             fontSize: { xs: 40, sm: 48, md: 54 },
             fontFamily: "Raleway",
             fontWeight: "bold",
+            textAlign: "center",
           }}
         >
+          The difference between hiring{" "}
           <Typography
             component={"span"}
             sx={{
@@ -149,14 +151,26 @@ function HireAttorneys2Header() {
               fontWeight: "bold",
             }}
           >
-            Hire
-          </Typography>{" "}
-          attorneys
+            attorneys
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: 14, sm: 18, md: 22, lg: 26 },
+              fontFamily: "Raleway",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+              color: "grey",
+              marginBottom: {xs: 2, sm: 4, md: 6}
+            }}
+          >
+            It is important you understand the options you have for resolving
+            your debt
+          </Typography>
         </Typography>
       </Box>
       <Grid container sx={{ height: 10 }}>
-        <Grid item xs={10} sx={{ backgroundColor: "red" }}></Grid>
         <Grid item xs={2}></Grid>
+        <Grid item xs={10} sx={{ backgroundColor: "grey", borderTopLeftRadius: 3, borderBottomLeftRadius: 3, boxShadow: 5 }}></Grid>
       </Grid>
     </Stack>
   );
@@ -172,6 +186,7 @@ function WeAreHeader() {
           alignItems: "flex-end",
           paddingRight: { xs: 4 },
           width: "100%",
+          textAlign: 'center'
         }}
       >
         <Typography
@@ -185,7 +200,7 @@ function WeAreHeader() {
             component={"span"}
             sx={{
               fontSize: { xs: 44, sm: 64, md: 84 },
-              color: "red",
+              color: "#284B63",
               fontWeight: "bold",
               paddingRight: 2,
               textShadow: "1px 1px 1px lightgrey",
@@ -215,6 +230,8 @@ function WeAreContainer() {
         backgroundImage: "url(cool-background5.png)",
         backgroundSize: "cover",
         boxShadow: 5,
+        textAlign: 'center'
+
       }}
     >
       <Stack

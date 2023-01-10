@@ -60,10 +60,11 @@ function ProvenTrackRecordHeader() {
             fontSize: { xs: 14, sm: 18, md: 22, lg: 26 },
             fontFamily: "Raleway",
             fontWeight: "bold",
-            textTransform: 'uppercase',
-            color: 'grey'
+            textTransform: "uppercase",
+            color: "grey",
           }}
-        >We work vigorously to defend your interests
+        >
+          We work vigorously to defend your interests
         </Typography>
         <Typography
           sx={{
@@ -79,7 +80,7 @@ function ProvenTrackRecordHeader() {
               fontSize: { xs: 28, sm: 38, md: 48, lg: 64 },
               fontFamily: "Raleway",
               fontWeight: "bold",
-              color: "red",
+              color: "#284B63",
             }}
           >
             attorneys
@@ -150,12 +151,14 @@ function ProvenTrackRecordContainer() {
       <Stack
         sx={{
           padding: { xs: 2, md: 12, lg: 12, xl: 17 },
-          backgroundColor: "rgba(255, 0, 0, .7)",
+          backgroundColor: "rgba(40,75,99,.6)",
           boxShadow: 5,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           position: "relative",
+          height: '100%',
+
           top: { md: -80, lg: -90, xl: -120 },
         }}
       >
@@ -166,6 +169,7 @@ function ProvenTrackRecordContainer() {
             textAlign: "center",
             marginBottom: 4,
             textDecoration: "underline",
+            color: 'white'
           }}
         >
           Explore some of the types of debt we dispute below.
@@ -191,8 +195,8 @@ function ProvenTrackRecord() {
     <Stack
       sx={{
         position: "relative",
-        marginY: { xs: 2, sm: 4 },
-        marginTop: { md: 7 },
+        marginTop: { xs: 2, sm: 4, md: 7 },
+        marginBottom: { xs: 2, sm: 4, md: 0 },
       }}
     >
       <ProvenTrackRecordHeader />
